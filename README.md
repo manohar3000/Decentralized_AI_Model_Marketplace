@@ -60,3 +60,47 @@ The **Decentralized AI Model Marketplace** is built on Web3 technologies, integr
 ---
 
 ## Folder Structure
+```
+decentralized-ai-marketplace/
+├── contracts/                      # Solidity smart contracts
+│   ├── ModelRegistry.sol         # Model registration & metadata contract
+│   └── Marketplace.sol           # Purchase & payment contract
+├── scripts/                        # Deployment scripts for Hardhat
+│   └── deploy.js                 # Deploys contracts on Sepolia
+├── test/                           # Unit and integration tests for contracts
+│   ├── ModelRegistry.test.js     
+│   └── Marketplace.test.js       
+├── frontend/                       # React application
+│   ├── public/                     # Static assets
+│   │   └── index.html            
+│   ├── src/                        # React source code
+│   │   ├── components/             # Reusable React components
+│   │   │   ├── Dashboard.jsx     
+│   │   │   ├── Dashboard.css     
+│   │   │   ├── Footer.jsx        
+│   │   │   ├── Footer.css        
+│   │   │   ├── Header.jsx        
+│   │   │   ├── Header.css        
+│   │   │   ├── HomePage.jsx      
+│   │   │   ├── HomePage.css      
+│   │   │   ├── ModelCard.jsx     
+│   │   │   ├── ModelCard.css     
+│   │   │   ├── ModelDetails.jsx  
+│   │   │   ├── ModelDetails.css  
+│   │   │   ├── UploadPage.jsx    # Integrated with Pinata for Private IPFS
+│   │   │   ├── UploadPage.css    
+│   │   │   ├── WalletConnect.jsx 
+│   │   │   └── WalletConnect.css
+│   │   ├── utils/                  # Utility functions and configuration files
+│   │   │   └── config.ts         # Pinata configuration
+│   │   ├── App.jsx               # Main React component with routing
+│   │   ├── index.css             # Global styles
+│   │   └── main.jsx              # React entry point
+│   ├── .env.local                # Environment variables (VITE_PINATA_JWT, VITE_GATEWAY_URL)
+│   ├── package.json              # Frontend dependencies and scripts (Vite, React)
+│   └── vite.config.js            # Vite configuration file
+├── .env                          # Environment variables for Hardhat (SEPOLIA_RPC_URL, PRIVATE_KEY)
+├── hardhat.config.js             # Hardhat configuration for deploying contracts
+├── package.json                  # Root-level package.json (for monorepo or shared dependencies)
+└── README.md                     # Project documentation and instructions
+```
