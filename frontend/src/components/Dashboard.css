@@ -1,0 +1,85 @@
+/* Container for the Dashboard */
+.dashboard.container {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background: #f9f9f9;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  /* Dashboard Title */
+  .dashboard.container h2 {
+    font-size: 2rem;
+    text-align: center;
+    color: #333;
+    margin-bottom: 2rem;
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 0.5rem;
+  }
+  
+  /* Dashboard Section Headers */
+  .dashboard-section h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #007bff;
+    border-left: 4px solid #007bff;
+    padding-left: 0.75rem;
+  }
+  
+  /* List styling for models */
+  .dashboard-section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .dashboard-section li {
+    background: #ffffff;
+    margin-bottom: 1rem;
+    padding: 1rem 1.5rem;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  }
+  
+  /* Hover effect on list items */
+  .dashboard-section li:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Model name and price styling */
+  .dashboard-section li span {
+    display: inline-block;
+  }
+  
+  .dashboard-section li .model-name {
+    font-weight: 600;
+    color: #333;
+  }
+  
+  .dashboard-section li .model-price {
+    font-weight: 500;
+    color: #007bff;
+  }
+  
+  /* Responsive Adjustments */
+  @media (max-width: 768px) {
+    .dashboard.container {
+      padding: 1rem;
+    }
+    
+    .dashboard-section h3 {
+      font-size: 1.3rem;
+    }
+    
+    .dashboard.container h2 {
+      font-size: 1.8rem;
+    }
+  }
+  

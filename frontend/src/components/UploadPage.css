@@ -1,0 +1,102 @@
+.upload-page.container {
+    max-width: 600px;
+    margin: 3rem auto;
+    padding: 2rem;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .upload-page h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: #333;
+    position: relative;
+  }
+  
+  .upload-page h2::after {
+    content: '';
+    position: absolute;
+    width: 80px;
+    height: 4px;
+    background: #007bff;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 2px;
+  }
+  
+  .upload-page form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  
+  .upload-page label {
+    display: flex;
+    flex-direction: column;
+    font-size: 1rem;
+    color: #555;
+    font-weight: 500;
+  }
+  
+  .upload-page input[type="text"],
+  .upload-page input[type="number"],
+  .upload-page textarea,
+  .upload-page input[type="file"] {
+    margin-top: 0.5rem;
+    padding: 0.8rem 1rem;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+  }
+  
+  .upload-page input[type="text"]:focus,
+  .upload-page input[type="number"]:focus,
+  .upload-page textarea:focus {
+    border-color: #007bff;
+    outline: none;
+  }
+  
+  .upload-page textarea {
+    resize: vertical;
+    min-height: 120px;
+  }
+  
+  .upload-page .btn.primary {
+    background: #007bff;
+    color: #fff;
+    padding: 0.8rem 1rem;
+    border: none;
+    border-radius: 6px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+  }
+  
+  .upload-page .btn.primary:hover {
+    background: #0056b3;
+    transform: translateY(-2px);
+  }
+  
+  .upload-page .btn.primary:disabled {
+    background: #7aa7e1;
+    cursor: not-allowed;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 480px) {
+    .upload-page.container {
+      margin: 2rem 1rem;
+      padding: 1.5rem;
+    }
+  
+    .upload-page h2 {
+      font-size: 1.8rem;
+    }
+  }
+  

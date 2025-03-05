@@ -1,0 +1,25 @@
+.model-details {
+    padding: 2rem;
+    background: #fff;
+    margin: 2rem 0;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.model-details h2 {
+    margin-bottom: 1rem;
+    color: #007bff;
+}
+
+.model-details p {
+    margin-bottom: 1rem;
+    line-height: 1.6;
+}
+
+.model-meta {
+    margin-bottom: 1.5rem;
+    display: flex;
+    gap: 1rem;
+    font-size: 0.9rem;
+    color: #555;
+}

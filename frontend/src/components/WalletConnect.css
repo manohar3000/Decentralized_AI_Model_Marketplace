@@ -1,0 +1,26 @@
+.wallet-connect {
+    display: flex;
+    align-items: center;
+}
+
+.connect-button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    width: fit-content;
+    height: auto;
+    font-weight: bolder;
+    font-size: larger;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.wallet-info {
+    display: flex;
+    flex-direction: column;
+    background-color: grey;
+    color: #fff;
+    padding: 5px;
+    border-radius: 15px;
+}

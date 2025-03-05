@@ -1,0 +1,26 @@
+{
+  "name": "decentralized_ai_model_marketplace",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/manohar3000/Decentralized_AI_Model_Marketplace.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/manohar3000/Decentralized_AI_Model_Marketplace/issues"
+  },
+  "homepage": "https://github.com/manohar3000/Decentralized_AI_Model_Marketplace#readme",
+  "devDependencies": {
+    "hardhat": "^2.22.19"
+  }
+}
