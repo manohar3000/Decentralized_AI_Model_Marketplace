@@ -31,7 +31,7 @@ The **Decentralized AI Model Marketplace** is built on Web3 technologies, integr
 - **Secure File Storage:**  
   Integrates with **Pinata Private IPFS** to securely store AI models and generate temporary signed URLs.
 - **Decentralized Payments:**  
-  Buyers purchase models with **cryptocurrency**, with funds transferred directly to the developer’s wallet.
+  Buyers purchase models with **cryptocurrency**, with funds transferred directly to the developer's wallet.
 - **Modern, Responsive UI:**  
   A sleek frontend built with **React and Vite** that supports wallet connectivity (e.g., MetaMask).
 - **Robust Testing:**  
@@ -104,3 +104,90 @@ decentralized-ai-marketplace/
 ├── package.json                  # Root-level package.json (for monorepo or shared dependencies)
 └── README.md                     # Project documentation and instructions
 ```
+
+## Installation
+
+1. Clone the repository:
+```bash
+git clone https://github.com/yourusername/decentralized-ai-marketplace.git
+cd decentralized-ai-marketplace
+```
+
+2. Install dependencies:
+```bash
+# Install root dependencies
+npm install
+
+# Install frontend dependencies
+cd frontend
+npm install
+```
+
+3. Set up environment variables:
+   - Copy `.env.example` to `.env` in the root directory
+   - Copy `frontend/.env.example` to `frontend/.env.local`
+   - Fill in your environment variables:
+     - `SEPOLIA_RPC_URL`: Your Sepolia testnet RPC URL
+     - `PRIVATE_KEY`: Your wallet private key for contract deployment
+     - `VITE_PINATA_JWT`: Your Pinata JWT token
+     - `VITE_GATEWAY_URL`: Your IPFS gateway URL
+
+## Usage
+
+1. Deploy smart contracts:
+```bash
+npx hardhat run scripts/deploy.js --network sepolia
+```
+
+2. Start the frontend development server:
+```bash
+cd frontend
+npm run dev
+```
+
+3. Access the application:
+   - Open your browser and navigate to `http://localhost:5173`
+   - Connect your Web3 wallet (e.g., MetaMask)
+   - Browse available AI models or upload your own
+
+## Testing
+
+### Smart Contract Testing
+```bash
+# Run all contract tests
+npx hardhat test
+
+# Run specific test file
+npx hardhat test test/ModelRegistry.test.js
+```
+
+### Frontend Testing
+```bash
+cd frontend
+npm test
+```
+
+### API Testing
+- Import the Postman collection from `postman/` directory
+- Set up environment variables in Postman
+- Run the test suite
+
+## Contributing
+
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add some amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
+
+Please read our [Contributing Guidelines](CONTRIBUTING.md) for details on our code of conduct and the process for submitting pull requests.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## Contact
+
+- Project Link: [https://github.com/yourusername/decentralized-ai-marketplace](https://github.com/yourusername/decentralized-ai-marketplace)
+- Email: your.email@example.com
+- Twitter: [@yourusername](https://twitter.com/yourusername)
